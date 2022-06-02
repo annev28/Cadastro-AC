@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Empréstimo de livros</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+      <ion-item>
+          <ion-label position="floating">Categoria:</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">Nome do livro:</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="floating">Ano:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+
+            <ion-item >
+              <ion-label position="stacked">Data de empréstimo</ion-label>
+              <ion-input type="date"></ion-input>
+            </ion-item>
+
+            <ion-item >
+                <ion-label position="stacked">Data de devolução prevista</ion-label>
+                <ion-input type="date"></ion-input>
+              </ion-item>
+
+              <ion-item >
+                  <ion-label position="floating">Valor</ion-label>
+                  <ion-input type="number"></ion-input>
+                </ion-item>
+            <div>
+               <p></p>
+                <ion-button color="success" expand="block" (click)="exibirAlerta()">Cadastrar empréstimo</ion-button>
+              </div>
+
+              <div>
+                  <p></p>
+                   <ion-button color="success" expand="block" (click)="Home()">Voltar</ion-button>
+                 </div>
+
+
+
+  </ion-content>

@@ -1,48 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Cadastro - Academia
+      LOGIN
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="small">Cadastro - Academia</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-item>
-    <ion-label position="floating">Nome:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
-
-  <ion-item>
-    <ion-label position="floating">Idade:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
-
-  <ion-item>
-    <ion-label position="floating">Telefone:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label position="floating">Horário:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+<ion-content [fullscreen]= "true">
 
   <ion-item>
     <ion-label position="floating">Email:</ion-label>
-    <ion-input type="email"></ion-input>
+      <ion-input type="email"></ion-input>
   </ion-item>
-<div>
-  <p></p>
-  <ion-button color="success" expand="block" (click)="exibirAlerta()">Cadastrar-se</ion-button>
-</div>
+
+  <ion-item>
+    <ion-label position="floating">Senha:</ion-label>
+      <ion-input type="email"></ion-input>
+  </ion-item>
+
+  <div>
+      <p></p>
+      <ion-button color="success" (click)="paginaAgenda()">Entrar</ion-button>
+  </div>
+
+  <div>
+      <p></p>
+      <ion-button color="success" (click)="paginaCadastro()">Cadastrar-se</ion-button>
+    </div>
 </ion-content>
-
-
